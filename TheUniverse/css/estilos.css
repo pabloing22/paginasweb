@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url(menu.css); /*importamos la hoja de estilos para trabajar el menu*/
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+@import url(footer.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Serif JP', sans-serif;
+    
+}
+
+header{
+   
+    width: 100%; /*tamaño del ancho del header*/
+    height: 50px; /*tamaño FIJO en pixeles del alto*/
+    background: #333;
+    color: #fff; /*color del texto del header*/
+    
+    position: fixed; /*para que cuando scrolee siempre se vea el HEADER*/
+    top:0;
+    left:0; /*se le da top y left para que quede fijo en el origen*/
+    
+    z-index: 100; /*para que se anteponga a cualquier elemento de menor index*/
+    
+    
+}
+
+h1{
+    float:left;
+}
+
+
+.contenedor{
+    width: 98%;
+    margin:auto;
+}
+
+
+
+
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos{
+    width: 100%;
+    text-align: center;
+   
+}
+
+
+@media (min-width:1024px) {
+    
+    .contenedor{
+        width: 1000px;
+    }
+    
+}
+
+
+
+
