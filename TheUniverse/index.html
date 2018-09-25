@@ -24,7 +24,7 @@
                 
                 <nav class="menu">
                     
-                    <a href="">Elemento 1</a>
+                    <a href="#" id="elemento1" onclick="ocultar();">Elemento 1</a>
                     <a href="">Elemento 2</a>
                     <a href="">Elemento 3</a>
                     <a href="">Elemento 4</a>
@@ -37,21 +37,18 @@
         
         
         <main>
-            
-            <section id="banner" >
-                
-                
-                
-                <img src="img/banner.png" alt="">
-                
-        
 
-                
+            <section id="banner">
+        
+                <img src="img/banner.png" alt="">
+                    
                 
                 <div class="contenedor">
                     <h2>Este es el banner</h2>
-                    <p>Este va a ser un contenido descriptivo del banner</p>
-                    <a href="#">LEER MÁS...</a>    
+                    <p>Contenido descriptivo del banner</p>
+                    
+                    <p id="lorem" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" id="botonbanner" onclick="leer();">LEER MÁS...</a>    
                 </div>
                 
                 
@@ -91,7 +88,7 @@
                         <img src="img/planeta3.jpg" alt="">
                     </article>
                     
-                 
+                    
                 </div>
                 
             </section>
@@ -129,6 +126,7 @@
             </section>
             
             
+            
             <footer>
                 
                 <div class="contenedor">
@@ -149,11 +147,12 @@
                 
             </footer>
             
+
             
             
         </main>
      
-        
+        <script src="js/script.js"></script>
     </body>
     
     
