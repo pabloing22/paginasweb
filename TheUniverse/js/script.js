@@ -18,11 +18,38 @@ function leer() {
 }
 
 
-function ocultar() {
+function irGaleria() {
 
-    var principal=document.getElementById('principal');
+    var principal=document.getElementById('principal_componente');
+    var galeria=document.getElementById('galeria_componente');
+    var galeriajs=document.getElementById('galeriajs_componente');
 
-    principal.style.display="none";
+    if (principal.style.display!="none"){
+
+        principal.style.display="none";    
+        
+    }else{
+        galeriajs.style.display="none";
+    }
+
+    galeria.style.display="block";
+
+}
+
+function irGaleriajs() {
+    console.log('jeje');
+    var principal=document.getElementById('principal_componente');
+    var galeriajs=document.getElementById('galeriajs_componente');
+
+    if (principal.style.display=="none"){
+        var galeria=document.getElementById('galeria_componente');
+        galeria.style.display="none";
+
+    } else {
+        principal.style.display="none";
+    }
+
+    galeriajs.style.display="block";
 
 
 }

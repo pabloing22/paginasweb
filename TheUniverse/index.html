@@ -23,10 +23,10 @@
                 <label class="icon-menu" for="menucheck"></label>
                 
                 <nav class="menu">
-                    
-                    <a href="#" id="elemento1" onclick="ocultar();">Elemento 1</a>
-                    <a href="">Elemento 2</a>
-                    <a href="">Elemento 3</a>
+
+                    <a href="index.html">Principal</a>
+                    <a href="#" onclick="irGaleria();">Galería CSS</a>
+                    <a href="#" onclick="irGaleriajs();">Galería JS</a>
                     <a href="">Elemento 4</a>
                     
                 </nav>
@@ -38,92 +38,298 @@
         
         <main>
 
-            <section id="banner">
-        
-                <img src="img/banner.png" alt="">
+            <div id="principal_componente">
+
+                <section id="banner">
+            
+                    <img src="img/banner.png" alt="">
+                        
                     
+                    <div class="contenedor">
+                        <h2>Este es el banner</h2>
+                        <p>Contenido descriptivo del banner</p>
+                        
+                        <p id="lorem" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" id="botonbanner" onclick="leer();">LEER MÁS...</a>    
+                    </div>
+                    
+                    
+                </section>
                 
-                <div class="contenedor">
-                    <h2>Este es el banner</h2>
-                    <p>Contenido descriptivo del banner</p>
+                <section id="bienvenidos">
+                    <h2>Título</h2>
                     
-                    <p id="lorem" style="display:none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" id="botonbanner" onclick="leer();">LEER MÁS...</a>    
+                    <div class="contenedor">
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam fugit quisquam excepturi autem veniam qui fugiat illo placeat saepe, doloremque totam. Cum perspiciatis veritatis id nulla fuga mollitia, sit alias.</p>
+                        
+                    </div>
+
+                </section>
+                
+                
+                
+                <section id="blog">
+                    
+                    <h3>Titulo del blog</h3>
+                    
+                    <div class="contenedor">
+                        
+                        <article>
+                            <h4>Planeta 1</h4>
+                            <img src="img/planeta1.jpg" alt="">
+                        </article>
+                        
+                        <article>
+                            <h4>Planeta 2</h4>
+                            <img src="img/planeta2.jpg" alt="">
+                        </article>
+                        
+                        <article>
+                            <h4>Planeta 3</h4>
+                            <img src="img/planeta3.jpg" alt="">
+                        </article>
+                        
+                        
+                    </div>
+                    
+                </section>
+                
+                <section id="info">
+                    
+                    <h3>Sección de Información</h3>
+                    
+                    <div class="contenedor">
+                        
+                        <div class="info-pez">
+                            
+                            <img src="img/pez1.jpg" alt="">
+                            <h4>Pertenece al planeta 1</h4>
+                            
+                        </div>
+                        
+                        <div class="info-pez">
+                            
+                            <img src="img/pez2.jpg" alt="">
+                            <h4>Pertenece al planeta 2</h4>
+                        </div>
+                        
+                        
+                        <div class="info-pez">
+                            <img src="img/pez3.jpg" alt="">
+                            <h4>Pertenece al planeta 3</h4>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                </section>
+
+            </div>
+
+            <div id="galeria_componente">
+            
+                <h2>GALAXIAS CSS</h2>
+                
+                
+                <ul class="galeria">
+                    
+                    <li>
+                        <a href="#galaxia1">
+                            <img src="img/galaxia1.jpg" >  
+                        </a>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="#galaxia2">
+                            <img src="img/galaxia2.jpg" >
+                        </a>
+                        
+                    </li>
+
+
+                    <li>
+                        <a href="#galaxia3">
+                            <img src="img/galaxia3.jpg" >
+                        </a>
+                        
+                    </li>
+
+
+                    <li>
+                        <a href="#galaxia4">
+                            <img src="img/galaxia4.jpg" >
+                        </a>
+                        
+                    </li>
+
+                    <li><a href="#galaxia5"><img src="img/galaxia5.jpg" alt=""></a></li>
+
+                    <li><a href="#galaxia6"><img src="img/galaxia6.jpg" alt=""></a></li>
+
+                    <li><a href="#galaxia7"><img src="img/galaxia7.jpg" alt=""></a></li>
+
+                    <li><a href="#galaxia8"><img src="img/galaxia8.jpg" alt=""></a></li>
+                
+                
+                </ul>
+                
+                
+
+                <div class="modal" id="galaxia1">
+
+                        <h3>Galaxia 1</h3>
+                        
+                        <div class="imagen">
+                            
+                            <a href="#galaxia8">&#60</a>
+                            <a href="#galaxia2">
+                                <img src="img/galaxia1.jpg">
+                            </a>
+                            <a href="#galaxia2">></a>
+                            
+                        </div>
+    
+                        <a href="#" id="cerrar" onclick="cerrarModal();">X</a>
+                        
                 </div>
                 
                 
-            </section>
-            
-            <section id="bienvenidos">
-                <h2>Título</h2>
+                <div class="modal" id="galaxia2">
+                        <h3>Galaxia 2</h3>
+                        
+                        <div class="imagen">
+                            
+                            <a href="#galaxia1">&#60</a>
+                            <a href="#galaxia3">
+                                <img src="img/galaxia2.jpg">
+                            </a>
+                            <a href="#galaxia3">></a>
+                            
+                        </div>
+                        <a href="#" id="cerrar">X</a>
+                        
+                </div>
                 
-                <div class="contenedor">
+                <div class="modal" id="galaxia3">
+
+                    <h3>Galaxia 3</h3>
                     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam fugit quisquam excepturi autem veniam qui fugiat illo placeat saepe, doloremque totam. Cum perspiciatis veritatis id nulla fuga mollitia, sit alias.</p>
-                    
+                    <div class="imagen">
+                        
+                        <a href="#galaxia2">&#60</a>
+                        <a href="#galaxia4">
+                            <img src="img/galaxia3.jpg">
+                        </a>
+                        <a href="#galaxia4">></a>
+                        
+                    </div>
+
+                    <a href="#" id="cerrar">X</a>
+                        
                 </div>
 
-            </section>
-            
-            
-            
-            <section id="blog">
-                
-                <h3>Titulo del blog</h3>
-                
-                <div class="contenedor">
+                <div class="modal" id="galaxia4">
+
+                    <h3>Galaxia 4</h3>
                     
-                    <article>
-                        <h4>Planeta 1</h4>
-                        <img src="img/planeta1.jpg" alt="">
-                    </article>
-                    
-                    <article>
-                        <h4>Planeta 2</h4>
-                        <img src="img/planeta2.jpg" alt="">
-                    </article>
-                    
-                    <article>
-                        <h4>Planeta 3</h4>
-                        <img src="img/planeta3.jpg" alt="">
-                    </article>
-                    
-                    
+                    <div class="imagen">
+                        
+                        <a href="#galaxia3">&#60</a>
+                        <a href="#galaxia5">
+                            <img src="img/galaxia4.jpg">
+                        </a>
+                        <a href="#galaxia5">></a>
+                        
+                    </div>
+
+                    <a href="#" id="cerrar">X</a>
+                        
                 </div>
-                
-            </section>
-            
-            <section id="info">
-                
-                <h3>Sección de Información</h3>
-                
-                <div class="contenedor">
+
+                <div class="modal" id="galaxia5">
+
+                    <h3>Galaxia 5</h3>
                     
-                    <div class="info-pez">
+                    <div class="imagen">
                         
-                        <img src="img/pez1.jpg" alt="">
-                        <h4>Pertenece al planeta 1</h4>
+                        <a href="#galaxia4">&#60</a>
+                        <a href="#galaxia6">
+                            <img src="img/galaxia5.jpg">
+                        </a>
+                        <a href="#galaxia6">></a>
                         
                     </div>
-                    
-                    <div class="info-pez">
+
+                    <a href="#" id="cerrar">X</a>
                         
-                        <img src="img/pez2.jpg" alt="">
-                        <h4>Pertenece al planeta 2</h4>
-                    </div>
-                    
-                    
-                    <div class="info-pez">
-                        <img src="img/pez3.jpg" alt="">
-                        <h4>Pertenece al planeta 3</h4>
-                    </div>
-                    
-                    
-                    
                 </div>
+
+                <div class="modal" id="galaxia6">
+
+                    <h3>Galaxia 6</h3>
+                    
+                    <div class="imagen">
+                        
+                        <a href="#galaxia5">&#60</a>
+                        <a href="#galaxia7">
+                            <img src="img/galaxia6.jpg">
+                        </a>
+                        <a href="#galaxia7">></a>
+                        
+                    </div>
+
+                    <a href="#" id="cerrar">X</a>
+                        
+                </div>
+
+                <div class="modal" id="galaxia7">
+
+                    <h3>Galaxia 7</h3>
+                    
+                    <div class="imagen">
+                        
+                        <a href="#galaxia6">&#60</a>
+                        <a href="#galaxia8">
+                            <img src="img/galaxia7.jpg">
+                        </a>
+                        <a href="#galaxia8">></a>
+                        
+                    </div>
+
+                    <a href="#" id="cerrar">X</a>
+                        
+                </div>
+
+
+                <div class="modal" id="galaxia8">
+
+                    <h3>Galaxia 8</h3>
+                    
+                    <div class="imagen">
+                        
+                        <a href="#galaxia7">&#60</a>
+                        <a href="#galaxia1">
+                            <img src="img/galaxia8.jpg">
+                        </a>
+                        <a href="#galaxia1">></a>
+                        
+                    </div>
+
+                    <a href="#" id="cerrar">X</a>
+                        
+                </div>
+
                 
-                
-            </section>
+            </div>
+
+            <div id="galeriajs_componente">
+                <h2>acá va la galería js</h2>
+            </div>
+            
             
             
             
@@ -152,7 +358,7 @@
             
         </main>
      
-        <script src="js/script.js"></script>
+        <script src="js/script.js"></script>"
     </body>
     
     
